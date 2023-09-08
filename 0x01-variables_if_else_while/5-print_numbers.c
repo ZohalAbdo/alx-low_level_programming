@@ -6,9 +6,10 @@
 */
 int main(void) 
 {
-for (int i = 0; i <= 9; i++)
+int n;
+for (n = 0; n <= 9; n++)
 {
-printf("%d\n", i);
+printf("%d\n", n);
 }
 
 return (0);
