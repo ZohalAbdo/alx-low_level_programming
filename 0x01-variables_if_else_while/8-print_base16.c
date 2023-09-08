@@ -7,7 +7,7 @@
 int main(void)
 {
 char digit;
-char letter
+char letter;
 for (digit = '0'; digit <= '9'; digit++)
 {
 putchar(digit);
