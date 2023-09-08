@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "pls input file name"
+read var
+echo "#include<stdio.h>
+/**
+*main - Entry point
+*
+*Return: Always 0 (Success)
+*/" > ${var}
+vi ${var}
+chmod a+x ${var}
