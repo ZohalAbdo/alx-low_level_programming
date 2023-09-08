@@ -6,12 +6,14 @@
 */
 int main(void)
 {
-for (char digit = '0'; digit <= '9'; digit++)
+char digit;
+char letter
+for (digit = '0'; digit <= '9'; digit++)
 {
 putchar(digit);
 }
 
-for (char letter = 'a'; letter <= 'f'; letter++)
+for (char = 'a'; letter <= 'f'; letter++)
 {
 utchar(letter);
 }
