@@ -12,9 +12,9 @@ for (digit = '0'; digit <= '9'; digit++)
 putchar(digit);
 }
 char letter;
-for (char = 'a'; letter <= 'f'; letter++)
+for (letter = 'a'; letter <= 'f'; letter++)
 {
-utchar(letter);
+putchar(letter);
 }
 
 putchar('\n');
