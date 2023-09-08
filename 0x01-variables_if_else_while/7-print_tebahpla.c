@@ -6,12 +6,14 @@
 */
 int main(void)
 {
-char digit
-for (digit = '0'; digit <= '9'; digit++) 
+char letter = 'z';
+
+while (letter >= 'a')
 {
-putchar(digit);
+putchar(letter);
+letter--;
 }
-    
+
 putchar('\n');
 
 return (0);
