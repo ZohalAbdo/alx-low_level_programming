@@ -1,6 +1,4 @@
 #!/bin/bash
-echo "input commit message"
-read var
 git add .
-git commit -m "${var}"
+git commit -m "all done"
 git push
