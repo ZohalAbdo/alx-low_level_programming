@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	long int i, j, k, next;
+	long int i, j, k, U;
 
 	j = 1;
 
@@ -22,9 +22,9 @@ int main(void)
 		{
 			printf("%ld\n", j);
 		}
-		next = j + k;
+		U = j + k;
 		j = k;
-		k = next;
+		k = U;
 	}
 
 	return (0);
