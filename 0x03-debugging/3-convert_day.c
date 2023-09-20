@@ -3,50 +3,50 @@
 /**
 * convert_day - converts day of month to day of year, without accounting
 * for leap year
-* @month: month in number format
-* @day: day of month
+* @months: month in number format
+* @days: day of month
 * Return: day of year
 */
 
-int convert_day(int month, int day)
+int convert_day(int months, int days)
 {
-	switch (month)
+	switch (months)
 	{
 	case 2:
-		day = 31 + day;
+		days = 31 + days;
 		break;
 	case 3:
-		day = 59 + day;
+		days = 59 + days;
 		break;
 	case 4:
-		day = 90 + day;
+		days = 90 + days;
 		break;
 	case 5:
-		day = 120 + day;
+		days = 120 + days;
 		break;
 	case 6:
-		day = 151 + day;
+		days = 151 + days;
 		break;
 	case 7:
-		day = 181 + day;
+		days = 181 + days;
 		break;
 	case 8:
-		day = 212 + day;
+		days = 212 + days;
 		break;
 	case 9:
-		day = 243 + day;
+		days = 243 + days;
 		break;
 	case 10:
-		day = 273 + day;
+		days = 273 + days;
 		break;
 	case 11:
-		day = 304 + day;
+		days = 304 + days;
 		break;
 	case 12:
-	    	day = 334 + day;
+	    	days = 334 + days;
 	    	break;
 	default:
 	    	break;
 	}
-	return (day);
+	return (days);
 }
