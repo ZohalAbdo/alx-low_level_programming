@@ -8,7 +8,7 @@
 int main(void)
 {
 	int i;
-	unsigned long int j, k, next, sum;
+	unsigned long int j, k, U, sum;
 
 	j = 1;
 	k = 2;
@@ -20,9 +20,9 @@ int main(void)
 		{
 			sum = sum + j;
 		}
-		next = j + k;
+		U = j + k;
 		j = k;
-		k = next;
+		k = U;
 	}
 
 	printf("%lu\n", sum);
