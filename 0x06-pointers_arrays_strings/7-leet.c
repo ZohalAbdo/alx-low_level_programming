@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * leet - function that encodes a string into  1337s.
- * @n: input value
+ * *leet - function that encodes a string into  1337s.
+ * @s: input value
  *
  * Return: char
  */
@@ -14,11 +14,12 @@ char *leet(char *s)
 
 	while (*(s + i) != '\0')
 	{
-		for (j = 0; j != '\0'; j++)
+		for (j = 0; a[j] != '\0'; j++)
 		{
 			if (*(s + i) == a[j])
 			{
 				*(s + i) = n[j];
+				break;
 			}
 		}
 		i++;
