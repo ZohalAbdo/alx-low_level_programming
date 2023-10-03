@@ -3,7 +3,6 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <stdbool.h>
-
 /**
  * func - Helper function
  * @i: counter
@@ -32,15 +31,12 @@ int func(int i)
 		}
 		else
 			i -= 1;
-
 		c++;
 	}
-
 	return (c);
 }
-
 /**
- * main - prints the minimum number of coins to make change for an amount of money.
+ * main - prints the minimum number of coins
  * @argc: the sum of arguments
  * @argv: array contain values of arguments
  * Return: 0 or 1
