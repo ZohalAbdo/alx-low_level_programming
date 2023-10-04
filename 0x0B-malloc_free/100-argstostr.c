@@ -22,7 +22,7 @@ char *argstostr(int ac, char **av)
 		x++;
 	}
 
-	a = malloc(x * sizeof(char));
+	a = malloc((x * sizeof(char) - 40));
 	if (a == NULL)
 		return (NULL);
 
