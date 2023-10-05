@@ -10,36 +10,44 @@
  * 
  * Return: 0 or 1
  */
-
 int main(int argc, char *argv[])
 {
-	int cents , num_coins , min_coins , i;
-	int *coins;
+	int total, count;
+	unsigned int i;
+	char *p;
+	int cents[] = {25, 10, 5, 2};
 
-	if (argc != 2) {
+	if (argc != 2)
+	{
 		printf("Error\n");
-		return 1;
+		return (1);
 	}
 
-	cents = atoi(argv[1]);
+	total = strtol(argv[1], &p, 10);
+	count = 0;
 
-	if (cents < 0) {
-		printf("0\n");
-		return 0;
-	}
-
-	coins[] = {25, 10, 5, 2, 1};
-	num_coins = sizeof(coins) / sizeof(coins[0]);
-	min_coins = 0;
-
-	for (i = 0; i < num_coins; i++) {
-		while (cents >= coins[i]) {
-			cents -= coins[i];
-			min_coins++;
+	if (!*p)
+	{
+		while (total > 1)
+		{
+			for (i = 0; i < sizeof(cents[i]); i++)
+			{
+				if (total >= cents[i])
+				{
+					count += total / cents[i];
+					total = total % cents[i];
+				}
+			}
 		}
+		if (total == 1)
+			count++;
+	}
+	else
+	{
+		printf("Error\n");
+		return (1);
 	}
 
-	printf("%d\n", min_coins);
-
-	return 0;
+	printf("%d\n", count);
+	return (0);
 }
