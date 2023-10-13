@@ -6,7 +6,7 @@
  */
 int print_char(va_list arg)
 {
-	printf("%c", va_arg(arg, int));
+	printf("%c", va_arg(arg, char));
 	return (0);
 }
 /**
@@ -58,7 +58,7 @@ void print_all(const char * const format, ...)
 	int i, j;
 	char *separate1 = "";
 	char *separate2 = ", ";
-	va_list args;
+	va_list arg;
 	zzz ops[] = {
 		{"c", print_char},
 		{"i", print_int},
@@ -67,7 +67,7 @@ void print_all(const char * const format, ...)
 		{NULL, NULL}
 	};
 
-	va_start(args, format);
+	va_start(arg, format);
 	i = 0;
 	while (format != NULL && format[i])
 	{
@@ -77,7 +77,7 @@ void print_all(const char * const format, ...)
 			if (format[i] == *(ops[j].c))
 			{
 				printf("%s", separate1);
-				ops[j].f(args);
+				ops[j].f(arg);
 			}
 			j++;
 		}
@@ -85,5 +85,5 @@ void print_all(const char * const format, ...)
 		i++;
 	}
 	printf("\n");
-	va_end(args);
+	va_end(arg);
 }
