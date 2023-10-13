@@ -63,11 +63,11 @@ void print_all(const char * const format, ...)
 	char *separate2 = ", ";
 	va_list arg;
 	zzz ops[] = {
-		{"c", print_char},
-		{"i", print_int},
-		{"s", print_str},
-		{"f", print_float},
-		{NULL, NULL}
+		{'c', print_char},
+		{'i', print_int},
+		{'s', print_str},
+		{'f', print_float},
+		{0, NULL}
 	};
 
 	va_start(arg, format);
@@ -77,7 +77,7 @@ void print_all(const char * const format, ...)
 		j = 0;
 		while (ops[j].f != NULL)
 		{
-			if (format[i] == *(ops[j].c))
+			if (format[i] == ops[j].c)
 			{
 				printf("%s", separate1);
 				ops[j].f(arg);

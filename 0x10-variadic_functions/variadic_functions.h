@@ -18,7 +18,7 @@ void print_all(const char * const format, ...);
  */
 typedef struct op
 {
-	char *c;
+	char c;
 	int (*f)(va_list a);
 } zzz;
 #endif
