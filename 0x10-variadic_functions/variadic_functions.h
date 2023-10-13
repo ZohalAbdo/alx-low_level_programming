@@ -11,4 +11,14 @@ void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
 
+/**
+ * struct op - struct for 3
+ * @c: character
+ * @f: function
+ */
+typedef struct op
+{
+	char *c;
+	int (*f)(va_list a);
+} zzz;
 #endif
