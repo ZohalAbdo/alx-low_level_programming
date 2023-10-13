@@ -1,4 +1,4 @@
-#include"variadic_functions.h"
+#include "variadic_functions.h"
 /**
  * print_char - prints char
  * @arg: list to give
@@ -6,7 +6,10 @@
  */
 int print_char(va_list arg)
 {
-	printf("%c", va_arg(arg, char));
+	char c;
+
+	c = va_arg(arg, int);
+	printf("%c", c);
 	return (0);
 }
 /**
