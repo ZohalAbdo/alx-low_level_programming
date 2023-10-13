@@ -50,7 +50,7 @@ int print_str(va_list arg)
 	printf("%s", s);
 	return (0);
 }
-/*
+/**
  *print_all - function that prints anything.
  *@format: a list of types of arguments passed to the function
  *
