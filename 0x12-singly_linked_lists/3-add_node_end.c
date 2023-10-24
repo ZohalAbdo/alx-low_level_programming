@@ -2,8 +2,8 @@
 
 /**
  * add_node_end - function that adds a new node at the end of a list_t list
- * @head: list.
- * @str: string 
+ *@head: list.
+ *@str: string
  * Return: the address of the new element, or NULL if it failed
  */
 
