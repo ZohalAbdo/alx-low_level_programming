@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * add_nodeint_end -  function that adds a new node 
+ * add_nodeint_end -  function that adds a new node
  * @head: pointer
  * @n: string
  * Return: Address or NULL
