@@ -2,6 +2,7 @@
 /**
  * add_dnodeint - function that adds a new node at the beginning of list
  *@head: head
+ *@n: value
  *Return:  the address of the new element, or NULL if it failed
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
